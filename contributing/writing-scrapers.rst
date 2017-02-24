@@ -22,14 +22,14 @@ Getting Started
 
 First thing you will need to do is get a working development environment on your local machine.  We'll do this using Docker.  No worries if you aren't familiar with Docker, you'll barely have to touch it.
 
-**Step 1)** Install Docker (and docker-compose) if not already installed on your local system.
+**Step 1)** Install Docker (and docker-compose) if not already installed on your local system:
 
     * On OSX: `Docker for Mac <https://docs.docker.com/docker-for-mac/>`_ is perhaps the easiest way.
     * On Windows: `Docker for Windows <https://docs.docker.com/docker-for-windows/>`_
     * On Linux: Use your package manager of choice or `follow Docker's instructions <https://docs.docker.com/engine/installation/linux/>`_.
     * `Generic instructions from Docker <https://docs.docker.com/compose/install/>`_.
 
-**Step 2)** Ensure that Docker (and docker-compose) are installed locally::
+**Step 2)** Ensure that Docker (and docker-compose) are installed locally and check their versions::
 
     $ docker -v
     Docker version 1.12.5, build 7392c3b
@@ -79,6 +79,8 @@ Some will differ a bit, but all will have ``__init__.py``, ``bills.py``, and ``l
 
     $ docker-compose build
     $ docker-compose up database
+
+If these commands fail with an error, check that your copy of docker-compose is a recent vintage, at least v1.9.0.
 
 At this point we have two docker images:
 
